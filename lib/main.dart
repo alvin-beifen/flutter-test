@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'keep_alive/keep_alive_demo.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -54,9 +54,9 @@ class _KeepAliveDemoState extends State<KeepAliveDemo> with SingleTickerProvider
       body: TabBarView(
         controller: _controller,
         children: <Widget>[
-          Text('111'),
-          Text('222'),
-          Text('333'),
+          MyHomePage(),
+          MyHomePage(),
+          MyHomePage(),
         ],
       )
     );
