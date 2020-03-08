@@ -1,6 +1,7 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
-import './pages/pages.dart';
 void main(List<String> args) {
   runApp(MyApp());
 }
@@ -9,12 +10,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter router 效果',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: FirstPageScreen()
+    return Container(
+      child: Image.asset('images/1.jpeg'),
     );
   }
 }
