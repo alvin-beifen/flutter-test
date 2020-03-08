@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
-import 'frostedClass/frosted_class.dart';
-void main() => runApp(MyApp());
 
+import './pages/pages.dart';
+void main(List<String> args) {
+  runApp(MyApp());
+}
 class MyApp extends StatelessWidget {
+  const MyApp({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter 磨砂效果',
+      title: 'Flutter router 效果',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        body: FrostedClassDemo(),
-      ),
+      home: FirstPageScreen()
     );
   }
 }

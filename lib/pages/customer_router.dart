@@ -59,5 +59,4 @@ class CustomerRoute extends PageRouteBuilder{
         );
       }
     );
-
 }
